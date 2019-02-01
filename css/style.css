@@ -29,12 +29,12 @@ h2{
 p {
     text-align: center;
     color:rgb(157, 163, 168);
-    padding-bottom: 5px;
+    padding-bottom: 25px;
 }
-legend + * {
-    -webkit-margin-top-collapse: separate;
-    margin-top: 10px;
-  }
+main p {
+    border-bottom: 2px solid rgb(45, 57, 69);
+    }
+
 
 main{
     width: 90%;
@@ -43,17 +43,17 @@ main{
 fieldset {
     border:0;
     
-}
-.contact{
+}    
+
+form{
     border-top: 1px solid black;
-    
 }
 
 legend{
     box-sizing:border-box;
     display: block;
     font-size: 1.2em;
-    padding-top: 45px;
+    padding-top: 25px;
     font-weight: bold;
 }
 
@@ -61,11 +61,13 @@ legend{
     width: 100%;
     background-color: rgb(239, 240, 241);
     height: 30px;
+    border:none;
 }
 
 label{
     line-height: 2.5;
 }
+
 
 #newTopics{
     width: 100%;
@@ -84,11 +86,145 @@ button{
 }
 
 button:hover{
-    background-color: rgba(.7);
+    background-color: lightgreen;
 }
 
 
 footer {
     width: 100%;
-    text-align: centar;
+    text-align: center;
+}
+
+/*---- Helper classes -----*/
+
+.newsletter{
+    display:block;
+    width:100%;
+    border-top: 1px solid black;
+    
+}
+
+::placeholder{
+    text-align: right;
+}
+
+body{
+    font-family: 'Merriweather', serif;
+}
+
+header{
+    width: 100%;
+    text-align: center;
+    background-color: rgb(45, 57, 69);
+}
+h1{
+    margin-top: 0;
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+    padding-top:20px;
+    padding-bottom: 20px; 
+}
+
+h2{
+    margin-top: 0;
+    color: black;
+    font-size: 1.25em;
+    font-weight: bold;
+    padding-top:10px;
+    padding-bottom: 10px;
+    text-align: center;
+
+}
+
+h4{
+    font-size: 1.1em;
+}
+p {
+    text-align: center;
+    color:rgb(157, 163, 168);
+    padding-bottom: 25px;
+}
+main p {
+    border-bottom: 2px solid rgb(45, 57, 69);
+}
+
+
+main{
+    width: 90%;
+    margin:auto;
+}
+fieldset {
+    border:0;
+    
+}    
+
+form{
+    border-top: 1px solid black;
+}
+
+legend{
+    box-sizing:border-box;
+    display: block;
+    font-size: 1.2em;
+    padding-top: 25px;
+    font-weight: bold;
+}
+
+.label{
+    width: 100%;
+    background-color: rgb(239, 240, 241);
+    height: 30px;
+}
+
+label{
+    line-height: 2.5;
+}
+
+
+#newTopics{
+    width: 100%;
+    background-color: rgb(239, 240, 241);
+    height: 60px;
+}
+
+button{
+    display: block;
+    width:100%;
+    background-color: green;
+    color: white;
+    margin-top: 20px;
+    height: 50px;
+    border-radius: 25px;
+
+}
+
+button:hover{
+    background-color: lightgreen;
+    color:black;
+    border-radius: 25px;
+}
+
+
+footer {
+    width: 100%;
+    text-align: center;
+}
+
+/*---- Helper classes -----*/
+
+.newsletter{
+    display:block;
+    width:100%;
+    border-top: 1px solid black;
+}
+
+
+::placeholder{
+    text-align: right;
+}
+
+[type="checkbox"],
+[type="radio"]{
+    margin-right: 10px;
 }
